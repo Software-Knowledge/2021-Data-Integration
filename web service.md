@@ -513,5 +513,5 @@ private String getEleInterface(String organization, String xml) {
 ```
 
 ## 4.9. 发布大众点评券服务
-1. 在Jenkins上构建项目；
+1. 在Jenkins上构建项目
 2. 打包项目jar包，发布到服务器
