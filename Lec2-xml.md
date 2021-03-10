@@ -1,10 +1,12 @@
 xml
 ---
+1. 转达信息
+2. 报告添加内容
 
 # 1. XML概述
 
 ## 1.1. XML 定义
-1. Extensible Markup Language:A set of rules for encoding documents electronically
+1. Extensible Markup Language：A set of rules for encoding documents electronically
 2. W3C于1998年推出的一种用于数据描述的元标记语言的国际标准
 
 ## 1.2. XML标准系列
@@ -42,6 +44,7 @@ xml
 ## 1.6. HTML和XHTML
 ![](img/xml/3.png)
 
+1. 标准的xml
 ```html
 <UL>
   <LI>张三</LI>
@@ -56,7 +59,7 @@ xml
   </UL>
   <LI>李四</LI>
   <UL>
-    <U>用户ID:002</LI>
+    <LI>用户ID:002</LI>
     <LI>公司:B公司</LI>
     <LI>EMAIL:li＠bbb．org</LI>
     <LI>电话:(021)87654321</LI>
@@ -67,6 +70,7 @@ xml
 </UL>
 ```
 
+2. 具有语义的xml
 ```xml
 <联系人列表>
   <联系人>
