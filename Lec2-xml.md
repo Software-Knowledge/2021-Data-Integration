@@ -1,4 +1,4 @@
-xml
+lec2-xml
 ---
 1. 转达信息
 2. 报告添加内容
@@ -25,26 +25,24 @@ xml
    4. Xquery:XML Query Language
 
 ## 1.3. XML版本
-1. 1.0版--Extensible Markup Language (XML) 1.0
+1. 1.0版-Extensible Markup Language (XML) 1.0
    1. 第一版:1998.2.10. W3C推荐标准
-   2. 第二版:2000.10.6. W3C推荐标准（加删少量DTD生成式,修改错误,改进描述）
-   3. 第三版:2004.2.4. W3C推荐标准（修改错误,改进描述）
-   4. 第四版:2006.8.16. W3C推荐标准（修改错误,改进描述）
-   5. 第五版:2008.11.26. W3C推荐标准（修改错误,放宽了对元素和属性命名字符的限制,~XML 1.1）
-2. 1.1版--Extensible Markup Language (XML) 1.1（元素和属性名称所采用扩展字符集）
+   2. 第二版:2000.10.6. W3C推荐标准(加删少量DTD生成式,修改错误,改进描述)
+   3. 第三版:2004.2.4. W3C推荐标准(修改错误,改进描述)
+   4. 第四版:2006.8.16. W3C推荐标准(修改错误,改进描述)
+   5. 第五版:2008.11.26. W3C推荐标准(修改错误,放宽了对元素和属性命名字符的限制,~XML 1.1)
+2. 1.1版--Extensible Markup Language (XML) 1.1(元素和属性名称所采用扩展字符集)
    1. 第一版:2004.2.4. W3C推荐标准
-   2. 第二版:2006.8.16.（修改错误,改进描述）
+   2. 第二版:2006.8.16.(修改错误,改进描述)
 
-## 1.4. 置标语言家谱表
-![](img/xml/1.png)
+| 置标语言家谱表     | Web体系结构的发展  |
+| ------------------ | ------------------ |
+| ![](img/xml/1.png) | ![](img/xml/2.png) |
 
-## 1.5. Web体系结构的发展
-![](img/xml/2.png)
-
-## 1.6. HTML和XHTML
+## 1.4. HTML和XHTML
 ![](img/xml/3.png)
 
-1. 标准的xml
+### 1.4.1. 标准的xml：使用标准的XML标签
 ```html
 <UL>
   <LI>张三</LI>
@@ -70,7 +68,7 @@ xml
 </UL>
 ```
 
-2. 具有语义的xml
+### 1.4.2. 具有语义的xml：使用自定义的标签
 ```xml
 <联系人列表>
   <联系人>
@@ -100,10 +98,10 @@ xml
 </联系人列表>
 ```
 
-## 1.7. XML和HTML比较
+## 1.5. XML和HTML比较
 ![](img/xml/4.png)
 
-## 1.8. XML的特点
+## 1.6. XML的特点
 1. 自描述性
 2. 内容独立性
 3. 可扩展和复用性
@@ -113,14 +111,14 @@ xml
 
 ![](img/xml/5.png)
 
-## 1.9. XML最重要的五个应用
-1. 数据交换:XML使用元素和属性来描述数据。在数据传送过程中,XML始终保留了诸如父/子关系这样的数据结构
-2. Web服务:SOAP可以在用不同编程语言构造的对象之间传递消息
-3. 内容管理:XML只用元素和属性来描述数据,而不提供数据的显示方法。XSLT等能够轻易地将XML文件转换成各种格式文件,比如HTML, WML, PDF, flat file, EDI等
-4. Web集成:在个人电子助理和浏览器之间用XML来传递数据
-5. 配置:将配置数据标记为XML格式,能使其更具可读性,并能方便地集成到应用系统中去；.NET中的XmlDocument和XmlTextReader
+## 1.7. XML最重要的五个应用
+1. **数据交换**:XML使用元素和属性来描述数据。在数据传送过程中，XML始终保留了诸如父/子关系这样的数据结构
+2. **Web服务**:SOAP可以在用不同编程语言构造的对象之间传递消息
+3. **内容管理**:XML只用元素和属性来描述数据，而不提供数据的显示方法。XSLT等能够轻易地将XML文件转换成各种格式文件，比如HTML，WML，PDF，flat file，EDI等
+4. **Web集成**:在个人电子助理和浏览器之间用XML来传递数据
+5. **配置**:将配置数据标记为XML格式，能使其更具可读性,并能方便地集成到应用系统中去；.NET中的XmlDocument和XmlTextReader
 
-## 1.10. XML设计目标
+## 1.8. XML设计目标
 1. 在互联网上直接使用
 2. 支持各种各样的应用程序
 3. 与SGML兼容
@@ -132,14 +130,14 @@ xml
 9. XML文件容易创建
 10. XML标记的简洁性无关紧要
 
-## 1.11. 开发XML应用的步骤
+## 1.9. 开发XML应用的步骤
 1. 考察应用场景,确定是否使用XML
 2. 设计系统架构和工作流程
-3. 设计XML文档中使用的标签（语汇集）
+3. 设计XML文档中使用的标签(语汇集)
 4. 根据语汇集开发处理XML文档的应用程序
-5. 特定场景下（如网站发布）还需要编写XSLT文档以转换XML文档生成目标数据
+5. 特定场景下(如网站发布)还需要编写XSLT文档以转换XML文档生成目标数据
 
-## 1.12. XML的缺点
+## 1.10. XML的缺点
 1. 结构不够紧凑:传统的二进制文档
 2. 性能较低
    1. 额外的文档分析过程
@@ -147,13 +145,13 @@ xml
    3. 读写XML文档需要执行更多的输入输出操作
    4. 缺少索引机制,大量数据读取和更新的效率比数据库操作低很多
 
-## 1.13. XML应用实例
+## 1.11. XML应用实例
 1. 为置标语言FCLML公司的客户列表置表语言制定的,文档类型定义DTD,其程序为fclml.dtd
 2. 客户联系信息的XML文档Client.xml
 3. 为client.xml制定一个样式Mystyle.xsl
 4. Html格式及显示
 
-### 1.13.1. Fclml.dtd
+### 1.11.1. Fclml.dtd
 ```xml
 <? xml version="1.0" encoding="GB2312"? >
 <!ELEMENT 联系人列表(联系人)*>
@@ -166,10 +164,10 @@ xml
 <!ELEMENT 电话(#PCDATA)>
 <!ELEMENT 街道(#PCDATA)>
 <!ELEMENT 城市(#PCDATA)>
-<!ELEMENT 省份(#PCDATA)
+<!ELEMENT 省份(#PCDATA)>
 ```
 
-### 1.13.2. Client.xml
+### 1.11.2. Client.xml
 ```xml
 <? xml version="1.0"encoding="GB2312" standalone="no"?>
 <!DOCTYPE 联系人列表 SYSTEM" fclml．dtd">
@@ -203,12 +201,12 @@ xml
 </联系人列表>
 ```
 
-### 1.13.3. MyStyle.xsl
-```xsl
+### 1.11.3. MyStyle.xsl
+```xml
 <?xml version="1．0"encoding="GB2312"?>
 <xsl:stylesheetxmlns:xsl="http://www.w3.org/TR/WD-xsl"
 xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
-<xst:template><xsI:apply-templates/></xsl:template>
+<xst:template><xsl:apply-templates/></xsl:template>
 <xsl:template match="/">
   <HTML>
   <HEAD>
@@ -221,8 +219,8 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 </xsl:template>
 ```
 
-### 1.13.4. Html格式
-```xsl
+### 1.11.4. Html格式
+```xml
 <xsl:stemplat match="联系人列表">
   <xsl:for-each select="联系人">
     <UL>
@@ -242,7 +240,7 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 </xsl:stylesheet>
 ```
 
-### 1.13.5. XML格式
+### 1.11.5. XML格式
 ```xml
 <HTML>
   <HEAD>
@@ -275,7 +273,7 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 </HTML>
 ```
 
-### 1.13.6. 显示
+### 1.11.6. 显示
 ![](img/xml/6.png)
 
 # 2. XML语法
@@ -287,13 +285,13 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
     <名词>XML</名词>
     <解释>XMI是一种可扩展的元置标语言,它可用以规定新的置标规则,并根据这个规则组织数据</解释>
     <示例>
-    <!-一个XML的例子->
-    <![CDATA[
-    <联系人>
-    <姓名>张三</姓名>
-    <EMAIL>zhang＠aaa．com</EMAIL>
-    </联系人>
-    ]]>
+      <!-一个XML的例子->
+      <![CDATA[
+      <联系人>
+      <姓名>张三</姓名>
+      <EMAIL>zhang＠aaa．com</EMAIL>
+      </联系人>
+      ]]>
     </示例>
   </专有名词>
 </专有名词列表>
@@ -327,30 +325,30 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 6. 空格会被保留
 
 ### 2.3.1. 元素规则
-1. 名字中不能包含空格
-2. 名字不能以数字或标点符号开头
-3. 名字不能以任何大小写的xml开头
-4. 左尖括号（<）后不可以有空格
-5. 起始和结束标签的大小写必须一致
-6. XML文件中出现的第一个元素是根元素
-7. 根元素必须有完整的起始和结束标签
-8. 所有的子元素必须嵌套在一个根元素中
+1. 名字中不能**包含空格**
+2. 名字不能以**数字或标点符号**开头
+3. 名字不能以任何**大小写的xml开头**
+4. 左尖括号(<)**后不可以有空格**
+5. **起始和结束标签的大小写**必须一致
+6. XML文件中出现的第一个元素是**根元素**
+7. **根元素必须有完整的起始和结束标签**
+8. 所有的子元素必须嵌套在**一个根元素**中
 
 ```xml
 <Root>
   <ChildA>
-    <ChildB>content
+    <ChildB>
+      content
     </ChildB>
   </ChildA>
 </Root>
 ```
 
-9.  嵌套元素不可以相互重叠
-10. 子元素如果内容为空
-11. 可以缩写标签:`<ElementName />`
+9.  嵌套元素不可以**相互重叠**
+10. 子元素如果内容为空，可以缩写标签:`<ElementName />`
 
 #### 2.3.1.1. 根元素
-1. XML 文档必须包含在一个单一元素中。
+1. XML 文档必须包含在一个**单一元素**中。
 
 ```xml
 <?xml version="1.0"?>
@@ -359,23 +357,24 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
   Hello, World!
 </greeting>
 ```
+
 2. 不包含单一根元素的文档都会被XML 解析器拒绝
 
-### 2.3.2. 必需有结束标记
+#### 2.3.1.2. 必需有结束标记
 1. 不能省去任何结束标记
-2. 如果一个元素根本不包含标记,则称为空元素；HTML 换行（`<br>`）和图像（`<img>`）元素就是两个例子。在XML文档的空元素中,可以把结束斜杠放在开始标记中。下面的两个换行元素和两个图像元素对于XML 解析器来说是一回事：
+2. 如果一个元素根本不包含标记,则称为空元素；HTML 换行(`<br>`)和图像(`<img>`)元素就是两个例子。在XML文档的空元素中,可以把结束斜杠放在开始标记中。下面的两个换行元素和两个图像元素对于XML 解析器来说是一回事：
 ```xml
 <img src="../img/c.gif"></img>
 <img src="../img/c.gif" />
 ```
 
-### 2.3.3. 属性
+#### 2.3.1.3. 属性
 1. 名称不够用
 2. 命名规则和元素的命名规则类似
 3. 属性必须有值
 4. 属性值必须用单引号或双引号括起,且要始终保持一致
 
-### 2.3.4. 实体引用
+#### 2.3.1.4. 实体引用
 1. 一些字符拥有特殊的意义
 
 ```xml
@@ -390,23 +389,23 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
    4. `&apos` ' 单引号
    5. `&quot;` " 引号
 
-### 2.3.5. CDATA字节
+#### 2.3.1.5. CDATA字节
 1. 元素内容的字符数据中不能插入左尖括号"<"或连字符"&"
 2. 数据难以阅读
 3. `<![CDATA[…]]>`
 4. 不包含字符串"]]>"即可
 
-### 2.3.6. 注释
+#### 2.3.1.6. 注释
 ```xml
 <!--This is a comment -->
 ```
 1. 空格会被保留
    1. HTML 会把多个连续的空格字符裁减为一个
    2. 在XML 中,文档中的空格不会被删节
-2. 双连字符"--"不能在注释中出现
-3. 注释不能以"--->"终止
+2. 双连字符`--`不能在注释中出现
+3. 注释不能以`--->`终止
 
-### 2.3.7. 良好格式（Well-formed）
+### 2.3.2. 良好格式(Well-formed)
 1. XML文件的第一行必须是声明该文件是XML文件以及它所使用的XML规范版本
 2. 在XML文件中有且只能够有一个根元素
 3. 在XML文件中的标记必须正确地关闭
@@ -414,7 +413,7 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 5. 属性值必须要用引号括起来
 6. 控制标记、指令和属性名称等英文要区分大小写
 
-### 2.3.8. XML名称空间
+### 2.3.3. XML名称空间
 1. 不同领域的XML语汇的识别问题
 2. 类似属性的形式声明
    1. xmlns: URI
@@ -425,10 +424,10 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 # 3. DTD与Scheme
 
 ## 3.1. DTD(Document Type Definition)
-1. 一套关于标记符的语法规则,XML1.0版标准中XML文件的验证机制,属于XML文件组成的一部分
-2. 一种保证XML文档格式正确的有效方法,可以通过比较XML文档和DTD文件来看文档是否符合规范,元素和标签使用是否正确
+1. 一套关于标记符的语法规则，XML1.0版标准中XML文件的验证机制，属于XML文件组成的一部分
+2. 一种保证XML文档格式正确的有效方法，可以通过比较XML文档和DTD文件来看文档是否符合规范，元素和标签使用是否正确
 3. 想使用XML进行数据交换的行业或组织可定义自己的DTD
-4. DTD文件是ASCII文本文件,后缀名为.dtd
+4. DTD文件是ASCII文本文件，后缀名为.dtd
 
 ### 3.1.1. 内部DTD示例
 ```xml
@@ -482,8 +481,8 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 <!ATTLIST 元素名 属性名 属性 类型 #REQUIRED>
 <!ATTLIST 页面作者 姓名 CDATA #REQUIRED
 #IMPLIED, #FIXED "缺省值">
-
 ```
+
 1. 元素名是属性所属的元素的名字
 2. 属性名是属性的名字
 3. 缺省值是属性的初值
@@ -531,14 +530,14 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 
 ```xml
 <!DOCTYPE 学生花名册[
-<!ELEMENT 学生花名册（学生*）>
-<!ATTLIST 学生花名册 年级CDATA # REQUIRED
-                    班级CDATA # IMPLIED>
-<!ELEMENT 学生(姓名+，籍贯，年龄，电话?)>
-<!ELEMENT 姓名（# PCDATA）>
-<!ELEMENT 籍贯(# PCDATA）>
-<!ELEMENT 年龄(# PCDATA）>
-<!ELEMENT 电话(# PCDATA）>
+  <!ELEMENT 学生花名册(学生*)>
+  <!ATTLIST 学生花名册 年级CDATA # REQUIRED
+                      班级CDATA # IMPLIED>
+  <!ELEMENT 学生(姓名+，籍贯，年龄，电话?)>
+  <!ELEMENT 姓名(# PCDATA)>
+  <!ELEMENT 籍贯(# PCDATA)>
+  <!ELEMENT 年龄(# PCDATA)>
+  <!ELEMENT 电话(# PCDATA)>
 ]>
 ```
 
@@ -632,10 +631,10 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 ### 3.2.2. Schema 声明
 1. XML Schema的根元素为schema 元素：位于XML Schema的名字空间xs(XML Schema)或xsd(XML Schema definition)中
 2. Schema元素含有多个属性
-   1. 名字空间声明（必须）
-   2. 其他在本文档中要用到的名字空间的声明（可选）
-   3. 该文档描述的目标名字空间（可选）
-   4. 语言（可选）等
+   1. 名字空间声明(必须)
+   2. 其他在本文档中要用到的名字空间的声明(可选)
+   3. 该文档描述的目标名字空间(可选)
+   4. 语言(可选)等
 3. 常用格式为：
 
 ```xml
@@ -704,15 +703,15 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
    3. 不能用来定义简单类型
    4. 可以有子元素
 3. 内置基本类型
-   1. 数字：decimal（十进制数）、float（浮点数）、double（双精度数）、hexBinary（十六进制数）、base64Binary（基64数）
-   2. 时间：duration（期间）、dateTime（日期与时间）、time（时间）、date（日期）、gYearMonth（年月）、gYear（年）、gMonth（月）、gMonthDay（月日）、gDay（日）
-   3. 其他：string（串）、boolean（布尔）、anyURI（任意统一资源标识符）、QName（限定名qualified name）、NOTATION（符号）
+   1. 数字：decimal(十进制数)、float(浮点数)、double(双精度数)、hexBinary(十六进制数)、base64Binary(基64数)
+   2. 时间：duration(期间)、dateTime(日期与时间)、time(时间)、date(日期)、gYearMonth(年月)、gYear(年)、gMonth(月)、gMonthDay(月日)、gDay(日)
+   3. 其他：string(串)、boolean(布尔)、anyURI(任意统一资源标识符)、QName(限定名qualified name)、NOTATION(符号)
 
 ### 3.2.6. 有效性验证
 1. 解析器构造XML文档，判断文档是否格式良好
 2. 验证文档信息项(例如一个元素)
    1. 根据元素的名域URI ，获取Schema
-   2. 将文档信息项关连到相应Schema Component（如元素声明）
+   2. 将文档信息项关连到相应Schema Component(如元素声明)
    3. 判断Schema Component是否有效
    4. 判断Information Item是否符合Schema Component
 3. 重复第二步，直到验证完整个文档
@@ -756,9 +755,9 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 ## 4.1. XSL
 1. eXtensibleStylesheetLanguage，即可扩展样式表语言，w3c 推荐的一种标准，用以定义XML 文档的转换与格式化
 2. 包含三个部分
-   1. XSLT（XSL Transformations）用于转换XML 文档的语言
+   1. XSLT(XSL Transformations)用于转换XML 文档的语言
    2. XPath(XML Path Language) 用于在XML 文档中导航的语言
-   3. XSL-FO（XSL Formatting Objects）一种用于格式化XML 文档的语言
+   3. XSL-FO(XSL Formatting Objects)一种用于格式化XML 文档的语言
 
 ### 4.1.1. Why need XSL
 1. XML文档开发时会遇到的问题
@@ -856,7 +855,7 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 ### 4.2.4. 定位路径组成
 1. XPath定位路径是由一步或许多步构成，这些步被前斜线"/"分隔每一步都由三个部分组成
    1. …/axis::nodetest[predicate]/…
-   2. 轴（axis）：由步选择的节点和当前上下文节点之间的关系
+   2. 轴(axis)：由步选择的节点和当前上下文节点之间的关系
    3. 节点测试(nodetest)：由步选择的节点类型和节点扩展名称
    4. 谓词(predicate)：可以没有，由表达式进一步筛选节点测试选择的节点集
 
@@ -971,7 +970,7 @@ xmlHs="http://www.w3.org/TR/REC-html40" result-ns:="">
 4. NodeList对象：对节点按指定的方式进行遍历
 
 ## 5.8. 面向文档的指针式解析技术
-1. 效率问题:提取解析模式，解析时提取一部分源文件（字符串），然后在内存中进行解析构建
+1. 效率问题:提取解析模式，解析时提取一部分源文件(字符串)，然后在内存中进行解析构建
 2. VTD(Virtual Token Descriptor)记录每个元素的起始位置，长度，深度以及令牌的类型等信息，类似于XML文档中元素的指针，可以快速定位到某个元素
 3. VTD-XML是一种无提取的XML解析方法，解决了DOM占用内存过大的缺点，并且还提供了快速的解析与遍历、对XPath的支持和增量更新等特性
 
